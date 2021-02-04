@@ -151,6 +151,18 @@ article h2.open-forever{
   margin: 0 auto;
 }
 
+.emphasize{
+  padding: 1em;
+  box-shadow: #27AE60 1px 0 5px;
+  border-left: 5px solid #27AE60;
+}
+
+.emphasize h2{
+  margin: 0;
+  border-left: none;
+  text-align: center;
+}
+
 button{
   width: 100%;
   margin-top: 1em;
