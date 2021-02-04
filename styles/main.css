@@ -186,6 +186,9 @@ button{
 }
 
 .sidy-by-side{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .description{
