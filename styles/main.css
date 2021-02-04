@@ -53,12 +53,6 @@ h1{
   margin: 0;
   font-family: 'Heartbeat';
   color: #27AE60;
-  text-shadow: 
-    3px 3px 0 #FCFCFC,
-    -1px -1px 0 #FCFCFC,  
-    1px -1px 0 #FCFCFC,
-    -1px 1px 0 #FCFCFC,
-    1px 1px 0 #FCFCFC;
 }
 
 .row{
@@ -69,6 +63,15 @@ h1{
 .row-2{
   display: flex;
   flex-direction: row;
+}
+
+.row, .row-2 h2{
+  text-shadow: 
+  3px 3px 0 #FCFCFC,
+  -1px -1px 0 #FCFCFC,  
+  1px -1px 0 #FCFCFC,
+  -1px 1px 0 #FCFCFC,
+  1px 1px 0 #FCFCFC;
 }
 
 h2{
@@ -90,7 +93,7 @@ table th{
   text-align: start;
 }
 
-table thead, table tbody{
+table th, table tbody{
   border-bottom: 1px solid #303030;
 }
 
@@ -165,7 +168,7 @@ article h2.open-forever{
 }
 
 .emphasize h2{
-  margin: 0;
+  padding: 0;
   border-left: none;
   text-align: center;
 }
@@ -195,6 +198,10 @@ button{
   flex: 1;
 }
 
+.product-details{
+  display: flex;
+}
+
 footer{
   padding: 1em;
   background: #303030;
@@ -219,6 +226,15 @@ footer{
 */
 
 @media (max-width: 480px) {
+  .product-details img{
+    height: auto;
+  }
+
+  .product-details{
+    display: flex;
+    flex-direction: column;
+  }
+
   .hidden-on-lg{
     display: block;
   }
@@ -234,6 +250,15 @@ footer{
 */
 
 @media (max-width: 1024px) {
+  .product-details img{
+    height: auto;
+  }
+
+  .product-details{
+    display: flex;
+    flex-direction: column;
+  }
+
   .logo{
     margin: 0 auto;
     width: 256px;
@@ -242,6 +267,7 @@ footer{
   .row{
     flex-direction: column;
   }
+
   .sidy-by-side{
     flex-direction: column;
     align-items: center;
